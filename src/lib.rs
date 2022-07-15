@@ -98,7 +98,7 @@ impl Masscan {
         self
     }
     pub fn set_default_exclude(mut self) -> Masscan {
-        self.exclude = include_str!("../exclude.conf");
+        self.exclude = include_str!("../exclude.conf").to_string();
         self
     }
 
