@@ -97,6 +97,10 @@ impl Masscan {
         self.exclude = exclude;
         self
     }
+    pub fn set_default_exclude(mut self) -> Masscan {
+        self.exclude = include_str!("../exclude.conf");
+        self
+    }
 
     pub fn set_sudo(mut self) -> Masscan {
         self.sudo = true;
