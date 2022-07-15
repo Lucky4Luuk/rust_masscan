@@ -116,7 +116,7 @@ impl Masscan {
         args.push("--wait");
         args.push("0");
         args.push("-oJ");
-        //args.push("-");
+        args.push("-");
         println!("args: {:?}", args);
 
         let output = if self.sudo {
